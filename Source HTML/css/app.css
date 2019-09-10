@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.App .todos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #747070;
+  overflow: hidden;
+}
+
+.App .todos__header {
+  border-bottom: 2px solid #747070;
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .todos__header .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .todos__header .form input {
+  width: 50%;
+  font-size: 2em;
+  margin: 10px;
+  border: none;
+  outline: none;
+  padding: 3px 10px;
+  margin: 10px;
+}
+
+.App .todos__header .form input:focus {
+  border-bottom: 2px solid #9ce04d;
+}
+
+.App .todos__header .form .btn {
+  border: none;
+  background: #9ce04d;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.App .todos__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.App .todos__body .todos__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 30px;
+}
+
+.App .todos__body .todos__item:hover {
+  background: #d6d3d3;
+}
+
+.App .todos__body .todos__item:hover .btn-remove {
+  opacity: 1;
+}
+
+.App .todos__body .todos__item.active .item-content {
+  color: #747070;
+  -webkit-text-decoration: #747070 line-through;
+          text-decoration: #747070 line-through;
+}
+
+.App .todos__body .todos__item .item-state:hover {
+  color: #F7F4F3;
+}
+
+.App .todos__body .todos__item .btn-remove {
+  opacity: 0;
+}
+
+.App .todos__body .todos__item .btn-remove:hover {
+  color: #F24333;
+}
+
+.App .todos__fooder {
+  border-top: 2px solid #747070;
+  width: 100%;
+}
+
+.App .todos__fooder .filter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .todos__fooder .filter .finter-content {
+  margin-right: auto;
+}
+
+.App .todos__fooder .filter .filter-picker {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .todos__fooder .filter .filter-picker input {
+  display: none;
+}
+
+.App .todos__fooder .filter .filter-picker input:checked + label {
+  color: #747070;
+}
+
+.App .todos__fooder .filter .filter-picker label {
+  cursor: pointer;
+}
+/*# sourceMappingURL=app.css.map */

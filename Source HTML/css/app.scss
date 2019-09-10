@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100ch;
+    height: 100vh;
+
+
+    .todos{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border : 2px solid #747070;
+        overflow: hidden;
+
+        &__header{
+            // background: #7f7fee;
+            border-bottom: 2px solid #747070;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .form{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+                input{
+                    width: 50%;
+                    font-size: 2em;
+                    margin: 10px;
+                    border: none;
+                    outline: none;
+                    padding: 3px 10px;
+                    margin: 10px;
+                   
+                    &:focus {
+                        border-bottom: 2px solid #9ce04d;                           
+                    }
+                }
+
+                .btn {
+                    border : none;
+                    background: #9ce04d;
+                    padding: 10px 20px;
+                    margin: 10px;
+                }
+            }
+        }
+
+        &__body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            max-height: 500px;
+            overflow-y: scroll;
+
+            .todos__item{
+                display: flex;
+                width: 100%;
+                padding: 10px 30px;
+                // margin: 5px 0;
+                justify-content: space-between;
+                font-size: 30px;
+               
+
+                &:hover{
+                    background: #d6d3d3;
+
+                    .btn-remove{
+                        opacity: 1;
+                    }
+                }
+
+                &.active{
+                    .item-content{
+                        color: #747070;
+                        text-decoration: #747070 line-through;
+                    }
+                }
+
+                .item-state{
+                     &:hover {
+                         color: #F7F4F3;
+                        //  F24333
+                     }
+                }
+
+                .btn-remove{
+                    opacity: 0;
+                    &:hover {
+                        color: #F24333;
+                        
+                    }
+                }
+            }
+        }
+
+        &__fooder{
+            border-top: 2px solid #747070;
+            width: 100%;
+            
+            .filter{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px;
+                align-items: center;
+
+                .finter-content{
+                    margin-right: auto;
+                }
+
+                .filter-picker{
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    input{
+                        display: none;
+
+                        &:checked + label{
+                            color: #747070;
+                        }
+                    }
+                    // cursor: pointer;
+                    label{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

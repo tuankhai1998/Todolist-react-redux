@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="todos">
+        <div class="todos__header">
+            <h1>Todo List</h1>
+            <div class="form">
+                <input type="text" placeholder="Nhập công việc cần làm">
+                <button class="btn btn-addItem"> Add </button>
+            </div>
+
+        </div>
+        <div class="todos__body">
+            <div class="todos__item">
+                <div class="item-state">
+                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check-square"></i>
+                </div>
+                <h3 class="item-content">Lorem ipsum dolor sit amet.</h3>
+                <div class="btn btn-remove">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+            <div class="todos__item active">
+                <div class="item-state">
+                    <i class="far fa-check-square"></i>
+                    <!-- <i class="fas fa-check-square"></i> -->
+                </div>
+                <h3 class="item-content   ">Lorem ipsum dolor sit amet.</h3>
+                <div class="btn btn-remove">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="todos__fooder">
+            <div class="filter">
+                <h3 class="finter-content">Chọ bộ lọc để hiển thị</h3>
+                <div class="filter-picker">
+                    <input type="radio" name="filter" id="1"/>
+                    <label for="1">Đã hoàn thành</label>
+                    <input type="radio" name="filter" id="-1"/>
+                    <label for="-1">Chưa hoàn thành</label>
+                    <input type="radio" name="filter" id="0"/>
+                    <label for="0">Tất cả</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d993cdbcc9.js"></script>
+</body>
+
+</html>
